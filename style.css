@@ -1,0 +1,169 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+header{
+  color: white;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+
+  .pc a{
+    text-decoration: none;
+    color: white;
+    padding: 0 16px;
+  }
+}
+@media (width<=600px){
+  header .pc{
+    display: none;
+  }
+}
+@media (width>600px){
+  header .sp{
+    display: none;
+  }
+}
+section{
+  padding: 32px 16px ;
+  
+}
+.top{
+  text-align: center;
+  margin-top: 64px;
+
+img{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 16px 0;
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+h3{
+  margin: 0;
+  padding: 8px;
+}
+}
+.section-title{
+  margin: 0;
+  padding: 16px 0;
+  text-align: center;
+}
+.about{
+  background: #eee;
+  
+  h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 8px;   
+    margin: 16px auto;
+    width: 100%;
+    max-width: 1200px;
+
+    @media (width >= 800px){
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
+    @media (width<330px){
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  .card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    .card-img{
+      aspect-ratio: 4/3;
+      width: 100%;
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    p{
+      text-align: center;
+      
+    }
+  }  
+  .card:hover{
+    transform: scale(1.03);
+  }
+}
+.gallery{
+  .items{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    gap: 32px;
+    justify-content: center;
+  }
+  .item{
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .item-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .walk img{
+    object-position: bottom;
+  }
+  @media (width<600px){
+    .items{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 8px;
+      justify-content: center;
+    }
+    
+  }
+}
+
+
+.contact{
+  background: #eee; 
+  .sns{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    
+  }
+  .sns-icon{
+    width: 64px;
+    height: 64px;
+  }
+  .sns-icon img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+footer{
+  text-align: center;
+}
