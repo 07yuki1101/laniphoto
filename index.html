@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lani Photo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h3>HEADER</h3>
-    <div class="sp"><nav>NAVIGATION</nav>
+    <div class="sp">
+      <nav><span class="material-symbols-outlined" id="open">menu</span></nav>
+      
+
     </div>
     
     <div class="pc">
@@ -21,6 +25,16 @@
       </nav>
     </div>
   </header>
+    <div class="overlay">
+      <span class="material-symbols-outlined" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="#camera" class="links">CAMERA</a></li>
+          <li><a href="#gallery" class="links">GALLERY</a></li>
+          <li><a href="#contact" class="links">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
 
   <main>
     <section class="top">
@@ -94,5 +108,6 @@
   <footer>
     <small>(c) 2025 Yuki Suzuki</small>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

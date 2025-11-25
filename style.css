@@ -8,7 +8,17 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  #open{
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 64px;
+    margin-right: 16px;
+  }
 
   .pc a{
     text-decoration: none;
@@ -16,6 +26,62 @@ header{
     padding: 0 16px;
   }
 }
+header h3{
+  margin-left: 16px;
+}
+#open.hide{
+  display: none;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255,0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  }
+
+
+  .overlay #close{
+    font-size: 32px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+  .overlay ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .overlay li{
+    padding-top: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity .3s transform .6s;
+
+  }
+  .overlay li a{
+      color: inherit;
+    }
+  .overlay.show{
+    opacity: 1;
+    pointer-events: all;
+  }
+  .overlay.show li{
+    opacity: 1;
+    transform: none;
+
+  }
+
+
 @media (width<=600px){
   header .pc{
     display: none;
@@ -47,6 +113,7 @@ h1{
 h3{
   margin: 0;
   padding: 8px;
+  height: 64px;
 }
 }
 .section-title{
