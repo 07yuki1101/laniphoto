@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,53 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <h3>HEADER</h3>
+    <h3>LANI PHOTO</h3>
     <div class="sp">
       <nav><span class="material-symbols-outlined" id="open">menu</span></nav>
-      
+
 
     </div>
-    
+
     <div class="pc">
       <nav>
-        <a href="#camera">CAMERA</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#contact">CONTACT</a>
+        <ul>
+          <li><a href="#camera">CAMERA</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
 
       </nav>
     </div>
   </header>
-    <div class="overlay">
-      <span class="material-symbols-outlined" id="close">close</span>
-      <nav>
-        <ul>
-          <li><a href="#camera" class="links">CAMERA</a></li>
-          <li><a href="#gallery" class="links">GALLERY</a></li>
-          <li><a href="#contact" class="links">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="overlay">
+    <span class="material-symbols-outlined" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#camera" class="links">CAMERA</a></li>
+        <li><a href="#gallery" class="links">GALLERY</a></li>
+        <li><a href="#contact" class="links">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main>
     <section class="top">
-     <img src="topvisual.JPG" alt="">
+      <img src="topvisual.JPG" alt="">
       <h1>LANI PHOTO</h1>
       <h3>crafted for slow days</h3>
     </section>
 
     <section class="about" id="camera">
       <h2 class="section-title">MY CAMERA</h2>
-      
+
       <div class="cards">
         <div class="card">
           <div class="card-img">
             <img src="xe5.jpg" alt="xe5">
-          </div>          
+          </div>
           <p>fujifilm X-E5</p>
         </div>
         <div class="card">
@@ -75,33 +79,29 @@
     </section>
     <section class="gallery" id="gallery">
       <h2 class="section-title">GALLERY</h2>
-        <div class="items">
-          <div class="item">
-            <div class="item-image walk"><img src="walking.jpg" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="item-image"><img src="sleeping.jpg" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="item-image"><img src="drink.jpeg" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="item-image walk"><img src="walking.jpg" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="item-image"><img src="sleeping.jpg" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="item-image"><img src="drink.jpeg" alt=""></div>
-          </div>
-        </div>
+      <div class="gal">
+        <ul class="pic">
+          <li><img src="walking.jpg" alt="" id="walk"></li>
+          <li><img src="sleeping.jpg" alt=""></li>
+          <li><img src="drink.jpeg" alt="" ></li>
+        </ul>
+        <button id="prev">&laquo;</button>
+        <button id="next">&raquo;</button>
+      </div>
+      <nav class="buttons">
+        
+      </nav>
+
     </section>
     <section class="contact" id="contact">
       <h2 class="section-title">CONTACT</h2>
       <div class="sns">
-        <div class="sns-icon"><a href="https://www.instagram.com/lani_pome_bichon?igsh=ZDB2cHplbGphYjFu" target="_blank"><img src="insta.png" alt=""></a></div>
-        <div class="sns-icon"><a href="https://www.tiktok.com/@lani_pome_bichon?_t=8opqCYeb3Sc&_r=1" target="_blank"><img src="tiktok.png" alt=""></a></div>
+        <div class="sns-icon"><a href="https://www.instagram.com/lani_pome_bichon?igsh=ZDB2cHplbGphYjFu"
+            target="_blank"><img src="insta.png" alt=""></a></div>
+        <div class="sns-icon"><a href="https://www.tiktok.com/@lani_pome_bichon?_t=8opqCYeb3Sc&_r=1"
+            target="_blank"><img src="tiktok.png" alt=""></a></div>
       </div>
+      
     </section>
   </main>
 
@@ -110,4 +110,5 @@
   </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>
